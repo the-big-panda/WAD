@@ -1,0 +1,186 @@
+:root {
+    --primary: #ffd700;
+    --dark: #0a0e17;
+    --text-gray:    ;
+  }
+  
+  body {
+    background: var(--dark);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    padding: 1.5rem 0;
+    background: rgba(10, 14, 23, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff !important;
+  }
+  
+  .navbar-brand span {
+    color: var(--primary);
+  }
+  
+  .navbar-toggler {
+    border: none;
+    color: var(--primary);
+  }
+  
+  .navbar-nav {
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover:after,
+  .nav-link.active:after {
+    width: 100%;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--primary) !important;
+  }
+  
+  
+  /* Resume Section Styles */
+  .resume-section {
+    padding: 6rem 0;
+    min-height: calc(100vh - 80px);
+  }
+  
+  .resume-section h2 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  
+  .resume-section h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  /* Resume Card Styles */
+  .resume-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .resume-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+    border-color: var(--primary);
+  }
+  
+  .resume-card h5 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-card h6 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-card p {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  /* Download Button Styles */
+  .download-btn {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .download-btn button {
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .download-btn button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    
+    .resume-section {
+      padding: 4rem 0;
+    }
+    
+    .resume-section h2 {
+      font-size: 2rem;
+    }
+    
+    .resume-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .resume-section {
+      padding: 3rem 0;
+    }
+    
+    .resume-card {
+      padding: 1.25rem;
+    }
+    
+    .resume-card h6 {
+      font-size: 1.1rem;
+    }
+  }

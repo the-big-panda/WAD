@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/   ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles/projects.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My<span>Projects.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./skills.html">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./resume.html">RESUME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="section-title">My Projects</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="./images/projects/credenz.jpg" alt="Credenz 24">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Credenz 24
+                                <div>
+                                    <a href="#" class="github-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.ieee.credenz24" class="live-link" title="Live Project"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </h5>
+                            <p class="card-text">A cross-platform mobile app streamlining event management and participation.</p>
+                            <button class="btn view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                            <div class="project-details">
+                                <p>Developed a comprehensive event management mobile application using cross-platform technologies to simplify participant registration, event tracking, and engagement.</p>
+                                <strong>Technologies:</strong>
+                                <ul>
+                                    <li>Flutter</li>
+                                    <li>Firebase</li>
+                                    <li>Cloud Functions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other project cards -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="./images/projects/feature_extraction.png" alt="Feature Extraction">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Feature Extraction
+                                <div>
+                                    <a href="#" class="github-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                 <!--   <a href="#" class="live-link" title="Live Project"><i class="fas fa-external-link-alt"></i></a>-->      
+                                </div>
+                            </h5>
+                            <p class="card-text">Advanced text extraction and entity recognition system using OCR and NLP.</p>
+                            <button class="btn view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                            <div class="project-details">
+                                <p>Implemented an advanced text extraction system leveraging Optical Character Recognition (OCR) and Natural Language Processing (NLP) techniques.</p>
+                                <strong>Technologies:</strong>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Tesseract OCR</li>
+                                    <li>spaCy NLP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="./images/projects/artproject.png" alt="ART Project">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                ART Project
+                                <div>
+                                    <a href="https://github.com/helpingwizard/dev_masters.git" class="github-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                   <!-- <a href="#" class="live-link" title="Live Project"><i class="fas fa-external-link-alt"></i></a> -->
+                                </div>
+                            </h5>
+                            <p class="card-text">Comprehensive data analysis and visualization platform with AI integration.</p>
+                            <button class="btn view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                            <div class="project-details">
+                                <p>Created a robust data analysis platform integrating AI-powered visualization and predictive analytics.</p>
+                                <strong>Technologies:</strong>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Python</li>
+                                    <li>Machine Learning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="./images/projects/nikhil_motors.png" alt="Nikhil Motors">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Nikhil Motors
+                                <div>
+                                    <a href="https://github.com/ShounakM04/Vehicle-Dealership.git" class="github-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.nikhilmotors.com/" class="live-link" title="Live Project"><i class="fas fa-external-link-alt"></i></a> 
+                                </div>
+                            </h5>
+                            <p class="card-text">Car Retail Website for efficient advertising and enterprise management.</p>
+                            <button class="btn view-details-btn" onclick="toggleDetails(this)">View Details</button>
+                            <div class="project-details">
+                                <p>Developed an interactive website for Nikhil Motors to showcase available second-hand vehicles, complete with detailed specifications and pricing.</p>
+                                <strong>Technologies:</strong>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>PostgreSQL</li>
+                                    <li>AWS</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleDetails(btn) {
+            const detailsSection = btn.nextElementSibling;
+            detailsSection.classList.toggle('show');
+            btn.textContent = detailsSection.classList.contains('show') ? 'Hide Details' : 'View Details';
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

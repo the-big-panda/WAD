@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvraj Patil - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 100px);
+        }
+        .text-section, .image-section {
+            flex: 1;
+        }
+        .profile-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">About<span>Me.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="./skills.html">SKILLS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./projects.html">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./resume.html">RESUME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">CONTACT</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="text-section">
+                    <p class="welcome-text">Hi there! I'm</p>
+                    <h1 class="main-heading">Yuvraj Patil</h1>
+                    <p class="description">A passionate tech innovator and pre-final year student at PICT, diving deep into machine learning and software development. As the Public Relations Officer at PISB, I bridge technical expertise with strategic leadership, transforming complex challenges into innovative solutions.</p>
+                    <a href="./contact.html" class="contact-btn">Let's Connect</a>
+                    <div class="social-links">
+                        <a href="https://github.com/Yuvraj3006" class="social-icon" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span class="icon-text">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yuvraj-patil-04a2a5260" class="social-icon" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="icon-text">LinkedIn</span>
+                        </a>
+                        <a href="mailto:yuvraj.patil.3006@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                            <span class="icon-text">Email</span>
+                        </a>
+                        <a href="tel:9322505681" class="social-icon">
+                            <i class="fas fa-phone"></i>
+                            <span class="icon-text">Call</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="yuvraj.jpg" alt="Yuvraj Patil" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

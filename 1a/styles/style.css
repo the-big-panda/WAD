@@ -1,0 +1,230 @@
+:root {
+  --primary: #ffd700;
+  --dark: #0a0e17;
+  --text-gray: #8892b0;
+}
+
+body {
+  background: var(--dark);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.navbar {
+  padding: 1.5rem 0;
+  background: rgba(10, 14, 23, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.navbar-brand span {
+  color: var(--primary);
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--primary);
+}
+
+.navbar-nav {
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after,
+.nav-link.active:after {
+  width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+
+.main-content {
+  padding: 8rem 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  color: var(--text-gray);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.social-icon:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.social-icon:hover:before {
+  top: 0;
+}
+
+.social-icon:hover {
+  color: var(--dark);
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.social-icon i {
+  position: relative;
+  z-index: 1;
+}
+
+.icon-text {
+  font-size: 0.8rem;
+  opacity: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  color: var(--primary);
+}
+
+.social-icon:hover .icon-text {
+  opacity: 1;
+  bottom: -25px;
+}
+
+.welcome-text {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.description {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.contact-btn {
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  color: var(--dark);
+}
+
+.image-section {
+  flex: 0.8; /* Reduced from 1 to make it smaller relative to text section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 350px; /* Fixed width instead of 100% */
+  height: 400px; /* Fixed height for aspect ratio */
+  object-fit: cover; /* Ensures image covers area without distortion */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 992px) {
+  .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .main-heading {
+      font-size: 2.5rem;
+  }
+
+  .description {
+      margin: 0 auto 2rem;
+  }
+
+  .profile-image {
+      width: 280px; /* Smaller on mobile */
+      height: 320px;
+  }
+}
