@@ -1,0 +1,145 @@
+{
+    "students": [
+      {
+        "name": "Alice Johnson",
+        "roll_number": 1,
+        "class": "10A",
+        "address": "123 Elm Street, NY",
+        "favorite_subject": "Mathematics"
+      },
+      {
+        "name": "Bob Smith",
+        "roll_number": 2,
+        "class": "10A",
+        "address": "456 Pine Street, NY",
+        "favorite_subject": "Science"
+      },
+      {
+        "name": "Charlie Brown",
+        "roll_number": 3,
+        "class": "10A",
+        "address": "789 Oak Street, NY",
+        "favorite_subject": "History"
+      },
+      {
+        "name": "David Williams",
+        "roll_number": 4,
+        "class": "10B",
+        "address": "101 Maple Street, NY",
+        "favorite_subject": "English"
+      },
+      {
+        "name": "Emma Davis",
+        "roll_number": 5,
+        "class": "10B",
+        "address": "202 Birch Street, NY",
+        "favorite_subject": "Physics"
+      },
+      {
+        "name": "Frank Thomas",
+        "roll_number": 6,
+        "class": "10B",
+        "address": "303 Cedar Street, NY",
+        "favorite_subject": "Chemistry"
+      },
+      {
+        "name": "Grace Hall",
+        "roll_number": 7,
+        "class": "10C",
+        "address": "404 Willow Street, NY",
+        "favorite_subject": "Biology"
+      },
+      {
+        "name": "Henry Wilson",
+        "roll_number": 8,
+        "class": "10C",
+        "address": "505 Spruce Street, NY",
+        "favorite_subject": "Geography"
+      },
+      {
+        "name": "Isabella Martinez",
+        "roll_number": 9,
+        "class": "10C",
+        "address": "606 Redwood Street, NY",
+        "favorite_subject": "Mathematics"
+      },
+      {
+        "name": "Jack Lee",
+        "roll_number": 10,
+        "class": "10D",
+        "address": "707 Cypress Street, NY",
+        "favorite_subject": "Computer Science"
+      },
+      {
+        "name": "Katie Moore",
+        "roll_number": 11,
+        "class": "10D",
+        "address": "808 Palm Street, NY",
+        "favorite_subject": "Economics"
+      },
+      {
+        "name": "Liam Jackson",
+        "roll_number": 12,
+        "class": "10D",
+        "address": "909 Walnut Street, NY",
+        "favorite_subject": "Statistics"
+      },
+      {
+        "name": "Mia Scott",
+        "roll_number": 13,
+        "class": "10E",
+        "address": "1010 Ash Street, NY",
+        "favorite_subject": "History"
+      },
+      {
+        "name": "Nathan White",
+        "roll_number": 14,
+        "class": "10E",
+        "address": "1111 Fir Street, NY",
+        "favorite_subject": "Physics"
+      },
+      {
+        "name": "Olivia Harris",
+        "roll_number": 15,
+        "class": "10E",
+        "address": "1212 Beech Street, NY",
+        "favorite_subject": "Literature"
+      },
+      {
+        "name": "Paul King",
+        "roll_number": 16,
+        "class": "10F",
+        "address": "1313 Chestnut Street, NY",
+        "favorite_subject": "Geography"
+      },
+      {
+        "name": "Quinn Green",
+        "roll_number": 17,
+        "class": "10F",
+        "address": "1414 Sycamore Street, NY",
+        "favorite_subject": "Mathematics"
+      },
+      {
+        "name": "Rachel Adams",
+        "roll_number": 18,
+        "class": "10F",
+        "address": "1515 Dogwood Street, NY",
+        "favorite_subject": "Science"
+      },
+      {
+        "name": "Sam Nelson",
+        "roll_number": 19,
+        "class": "10G",
+        "address": "1616 Magnolia Street, NY",
+        "favorite_subject": "Chemistry"
+      },
+      {
+        "name": "Tina Carter",
+        "roll_number": 20,
+        "class": "10G",
+        "address": "1717 Hickory Street, NY",
+        "favorite_subject": "English"
+      }
+    ]
+  }
+  
