@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple jQuery Mobile Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <style>
+        .center-content {
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .ui-page {
+            background-color: #f9f9f9;
+        }
+        .my-footer {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed">
+            <h1>My Company</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="center-content">
+                <h2>Welcome to Our Mobile Site</h2>
+                <img src="amazon.jpg" alt="Company Banner" height="400" width="600">
+                <p>We provide innovative solutions for your needs.</p>
+            </div>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="ui-grid-b">
+                <div class="ui-block-a center-content">
+                    <div class="feature-icon">★</div>
+                    <h3>Quality</h3>
+                    <p>Superior products</p>
+                </div>
+                <div class="ui-block-b center-content">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Speed</h3>
+                    <p>Fast delivery</p>
+                </div>
+                <div class="ui-block-c center-content">
+                    <div class="feature-icon">💰</div>
+                    <h3>Value</h3>
+                    <p>Great prices</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="my-footer">
+            <h4>© 2025 My Company</h4>
+        </div>
+
+        <div data-role="panel" id="nav-panel">
+            <ul data-role="listview">
+                <li data-icon="home"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="about">
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>About Us</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Our Story</h2>
+            <img src="/api/placeholder/300/200" alt="Company Office">
+            <p>Founded in 2020, our company has been dedicated to providing excellent service to our customers.</p>
+            <p>We started with a simple mission: to create quality products that solve real problems.</p>
+            
+            <h3>Our Team</h3>
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                    <h3>Leadership</h3>
+                    <p>Our leadership team has over 30 years of combined experience in the industry.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Development</h3>
+                    <p>Our developers work tirelessly to create innovative solutions.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Customer Support</h3>
+                    <p>Our support team is available 24/7 to assist with any questions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="my-footer">
+            <h4>© 2025 My Company</h4>
+        </div>
+
+        <div data-role="panel" id="nav-panel">
+            <ul data-role="listview">
+                <li data-icon="home"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Services Page -->
+    <div data-role="page" id="services">
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Our Services</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>What We Offer</h2>
+            
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#">
+                        <h2>Web Development</h2>
+                        <p>Custom websites and web applications</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>Mobile Apps</h2>
+                        <p>iOS and Android development</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>UX/UI Design</h2>
+                        <p>Beautiful and intuitive interfaces</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>Consulting</h2>
+                        <p>Expert advice on digital strategy</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <h3>Pricing</h3>
+            <div data-role="rangeslider">
+                <label for="price-min">Budget Range:</label>
+                <input type="range" name="price-min" id="price-min" value="1000" min="0" max="10000">
+                <label for="price-max">Max:</label>
+                <input type="range" name="price-max" id="price-max" value="5000" min="0" max="10000">
+            </div>
+            <a href="#" data-role="button" data-theme="b">Get a Quote</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="my-footer">
+            <h4>© 2025 My Company</h4>
+        </div>
+
+        <div data-role="panel" id="nav-panel">
+            <ul data-role="listview">
+                <li data-icon="home"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Contact Us</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Get In Touch</h2>
+            
+            <form>
+                <div data-role="fieldcontain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="subject">Subject:</label>
+                    <select name="subject" id="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="sales">Sales Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="How can we help you?"></textarea>
+                </div>
+                
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#" data-role="button" data-theme="b">Submit</a>
+                    <a href="#" data-role="button" data-theme="a">Reset</a>
+                </div>
+            </form>
+            
+            <div data-role="collapsible">
+                <h3>Our Location</h3>
+                <p>123 Business Street<br>Tech City, State 12345</p>
+                <p>Phone: (555) 123-4567<br>Email: info@mycompany.com</p>
+                <div class="center-content">
+                    <img src="/api/placeholder/300/200" alt="Map Location">
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="my-footer">
+            <h4>© 2025 My Company</h4>
+        </div>
+
+        <div data-role="panel" id="nav-panel">
+            <ul data-role="listview">
+                <li data-icon="home"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
